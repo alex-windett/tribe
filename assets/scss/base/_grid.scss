@@ -1,0 +1,31 @@
+.row {
+    @extend .clearfix;
+}
+
+@for $i from 1 through $max-columns {
+
+    .small-#{$i} {
+        width: 100% / $i;
+    }
+
+    @media #{$medium-up} {
+        .medium-#{$i} {
+            width: 100% / $i;
+        }
+    }
+
+    @media #{$large-up} {
+        .large-#{$i} {
+            width: 100% / $i;
+        }
+    }
+}
+
+
+.columns-* {
+    float: left;
+
+    &.last {
+        float: right;
+    }
+}

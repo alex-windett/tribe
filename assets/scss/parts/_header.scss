@@ -1,0 +1,7 @@
+.nav {
+    @extend .clearfix;
+
+    &__main {
+        background: $color-dark;
+    }
+}

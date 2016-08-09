@@ -1,0 +1,24 @@
+.color__light {
+    color: $color-secondary;
+}
+
+.font__bold {
+    font-family: $font-bold;
+}
+
+.inline-list {
+
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+    }
+}
+
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
