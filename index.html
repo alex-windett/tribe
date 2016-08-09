@@ -6,6 +6,7 @@
  		<title>Tribe</title>
  		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css' rel='stylesheet' type='text/css'>
  		<link rel="stylesheet" type="text/css" href="assets/css/src/app.css">
  	</head>
  	<body>
@@ -15,17 +16,52 @@
                 <div class="body_wrapper">
 
                     <nav class="nav nav__main row">
-                        <div class="columns small-2">
-navs
+                        <div class="col-3">
+                            <a href="/">
+                                <img src="./assets/img/icon/logo.png" alt="Tribe" class="site-logo"/>
+                            </a>
                         </div>
 
-                        <div class="columns small-2">
+                        <div class="col-3">
+                            <section class="basket">
+                                <div class="basket__item basket__quantity">
+                                    <div class="splash__wrapper basket__quantity--icon">
+                                        <span class="basket__qunatity--total splash__roundal splash__roundal--primary">2</span>
+                                        <img src="./assets/img/icon/cart.png" alt="Trolley" />
+                                    </div>
+                                    <span class="basket__quantity--cost">£59.00</span>
+                                </div>
 
+                                <div class="basket__item basket__favourites">
+                                    <div class="splash__wrapper">
+                                        <span class="basket__qunatity--total splash__roundal splash__roundal--primary">2</span>
+                                        <img src="./assets/img/icon/heart-grey.png" alt="Favourties" />
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </nav>
 
-                    <section class="entry__wrapper">
-                        hwllo
+                    <section class="entry__wrapper row">
+                        <div class="col-3">
+                            <img src="./assets/img/content/ps4.jpg" alt="PS4" />
+                        </div>
+                        <div class="col-3">
+                            <section class="copy__wrapper item">
+                                <h3>Lorum</h3>
+                                <h2>Lorum Ipsum</h2>
+
+                                <section class="item__purchase">
+                                    <div class="item__purchase--price">
+                                        <h2>
+                                            <span class="discount">£20.99</span>
+                                            £12.99
+                                        </h2>
+                                        <p class="light">RRP:£27.99 (Lorem ipsum 20%)</p>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
                     </section>
 
                     <footer class="footer footer__main">

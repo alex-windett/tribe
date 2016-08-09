@@ -1,16 +1,18 @@
-body {
-    background: $color-secondary;
-}
-
-.entry__wrapper {
-    margin: 0 auto;
-    max-width: $max-container-width;
-}
-
 p {
     font-family: $font-regular;
     font-size: 14px;
     line-height: 21px;
+}
+
+body {
+    background: $color-bg;
+
+    @extend p
+}
+
+.entry__wrapper {
+    margin: 30px auto;
+    max-width: $max-container-width;
 }
 
 h1 {
@@ -35,4 +37,9 @@ a {
     font-family: inherit;
     font-size: inherit;;
     text-decoration: underline;
+}
+
+.copy__wrapper {
+    background: white;
+    padding: 35px 40px 35px 60px;
 }

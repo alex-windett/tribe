@@ -3,5 +3,31 @@
 
     &__main {
         background: $color-dark;
+        color: white;
+        padding: 20px 30px;
+    }
+}
+
+.site-logo {
+    margin-top: 10px;
+}
+
+.basket {
+    text-align: right;
+
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &__quantity {
+
+        &--icon {
+            float: left
+        }
+        &--cost {
+            float: right;
+            margin-top: 15%;
+        }
     }
 }

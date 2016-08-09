@@ -24,147 +24,190 @@
   clear: both;
 }
 
-/* line 7, ../../scss/base/_grid.scss */
-.small-1 {
-  width: 100%;
+/*-- our cleafix hack -- */
+/* line 6, ../../scss/base/_grid.scss */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-@media only screen and (min-width: 45.71429em) {
-  /* line 12, ../../scss/base/_grid.scss */
-  .medium-1 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 73.14286em) {
-  /* line 18, ../../scss/base/_grid.scss */
-  .large-1 {
-    width: 100%;
-  }
-}
-/* line 7, ../../scss/base/_grid.scss */
-.small-2 {
-  width: 50%;
-}
-
-@media only screen and (min-width: 45.71429em) {
-  /* line 12, ../../scss/base/_grid.scss */
-  .medium-2 {
-    width: 50%;
-  }
-}
-@media only screen and (min-width: 73.14286em) {
-  /* line 18, ../../scss/base/_grid.scss */
-  .large-2 {
-    width: 50%;
-  }
-}
-/* line 7, ../../scss/base/_grid.scss */
-.small-3 {
-  width: 33.33333%;
-}
-
-@media only screen and (min-width: 45.71429em) {
-  /* line 12, ../../scss/base/_grid.scss */
-  .medium-3 {
-    width: 33.33333%;
-  }
-}
-@media only screen and (min-width: 73.14286em) {
-  /* line 18, ../../scss/base/_grid.scss */
-  .large-3 {
-    width: 33.33333%;
-  }
-}
-/* line 7, ../../scss/base/_grid.scss */
-.small-4 {
-  width: 25%;
-}
-
-@media only screen and (min-width: 45.71429em) {
-  /* line 12, ../../scss/base/_grid.scss */
-  .medium-4 {
-    width: 25%;
-  }
-}
-@media only screen and (min-width: 73.14286em) {
-  /* line 18, ../../scss/base/_grid.scss */
-  .large-4 {
-    width: 25%;
-  }
-}
-/* line 7, ../../scss/base/_grid.scss */
-.small-5 {
-  width: 20%;
-}
-
-@media only screen and (min-width: 45.71429em) {
-  /* line 12, ../../scss/base/_grid.scss */
-  .medium-5 {
-    width: 20%;
-  }
-}
-@media only screen and (min-width: 73.14286em) {
-  /* line 18, ../../scss/base/_grid.scss */
-  .large-5 {
-    width: 20%;
-  }
-}
-/* line 25, ../../scss/base/_grid.scss */
-.columns-* {
+/* line 13, ../../scss/base/_grid.scss */
+[class*='col-'] {
   float: left;
+  min-height: 1px;
+  width: 16.66%;
 }
-/* line 28, ../../scss/base/_grid.scss */
-.columns-*.last {
+/* line 18, ../../scss/base/_grid.scss */
+[class*='col-']:last-child {
   float: right;
 }
 
+/* line 23, ../../scss/base/_grid.scss */
+.col-1 {
+  width: 16.66%;
+}
+
+/* line 24, ../../scss/base/_grid.scss */
+.col-2 {
+  width: 33.33%;
+}
+
+/* line 25, ../../scss/base/_grid.scss */
+.col-3 {
+  width: 50%;
+}
+
+/* line 26, ../../scss/base/_grid.scss */
+.col-4 {
+  width: 66.66%;
+}
+
+/* line 27, ../../scss/base/_grid.scss */
+.col-5 {
+  width: 83.33%;
+}
+
+/* line 28, ../../scss/base/_grid.scss */
+.col-6 {
+  width: 100%;
+}
+
+/*-- some extra column content styling --*/
+@media all and (max-width: 800px) {
+  /* line 51, ../../scss/base/_grid.scss */
+  .col-1 {
+    width: 50%;
+  }
+
+  /* line 52, ../../scss/base/_grid.scss */
+  .col-2 {
+    width: 100%;
+  }
+
+  /* line 53, ../../scss/base/_grid.scss */
+  .col-3 {
+    width: 100%;
+  }
+
+  /* line 54, ../../scss/base/_grid.scss */
+  .col-4 {
+    width: 100%;
+  }
+
+  /* line 55, ../../scss/base/_grid.scss */
+  .col-5 {
+    width: 100%;
+  }
+
+  /* line 56, ../../scss/base/_grid.scss */
+  .col-6 {
+    width: 100%;
+  }
+}
 /* line 1, ../../scss/base/_page.scss */
-body {
-  background: #bbbbbb;
-}
-
-/* line 5, ../../scss/base/_page.scss */
-.entry__wrapper {
-  margin: 0 auto;
-  max-width: 1280px;
-}
-
-/* line 10, ../../scss/base/_page.scss */
-p {
+p, body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 21px;
 }
 
-/* line 16, ../../scss/base/_page.scss */
+/* line 7, ../../scss/base/_page.scss */
+body {
+  background: #d7d7d7;
+}
+
+/* line 13, ../../scss/base/_page.scss */
+.entry__wrapper {
+  margin: 30px auto;
+  max-width: 1280px;
+}
+
+/* line 18, ../../scss/base/_page.scss */
 h1 {
   font-family: "Lato", sans-serif;
   font-size: 42px;
   line-height: 54px;
 }
 
-/* line 22, ../../scss/base/_page.scss */
+/* line 24, ../../scss/base/_page.scss */
 h2 {
   font-family: "Lato", sans-serif;
   font-size: 30px;
   line-height: 42px;
 }
 
-/* line 28, ../../scss/base/_page.scss */
+/* line 30, ../../scss/base/_page.scss */
 h3 {
   font-family: "Lato", sans-serif;
   font-size: 24px;
   line-height: 30px;
 }
 
-/* line 34, ../../scss/base/_page.scss */
+/* line 36, ../../scss/base/_page.scss */
 a {
   font-family: inherit;
   font-size: inherit;
   text-decoration: underline;
 }
 
+/* line 42, ../../scss/base/_page.scss */
+.copy__wrapper {
+  background: white;
+  padding: 35px 40px 35px 60px;
+}
+
+/* line 3, ../../scss/modules/_splash.scss */
+.splash__wrapper {
+  margin: 5px 10px;
+  padding: 10px;
+  position: relative;
+}
+/* line 9, ../../scss/modules/_splash.scss */
+.splash__roundal {
+  border-radius: 20px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  padding: 0px 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 20, ../../scss/modules/_splash.scss */
+.splash__roundal--primary {
+  background: #00aeef;
+}
+
 /* line 4, ../../scss/parts/_header.scss */
 .nav__main {
   background: #1a1a1a;
+  color: white;
+  padding: 20px 30px;
+}
+
+/* line 11, ../../scss/parts/_header.scss */
+.site-logo {
+  margin-top: 10px;
+}
+
+/* line 15, ../../scss/parts/_header.scss */
+.basket {
+  text-align: right;
+}
+/* line 18, ../../scss/parts/_header.scss */
+.basket__item {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 25, ../../scss/parts/_header.scss */
+.basket__quantity--icon {
+  float: left;
+}
+/* line 28, ../../scss/parts/_header.scss */
+.basket__quantity--cost {
+  float: right;
+  margin-top: 15%;
 }
