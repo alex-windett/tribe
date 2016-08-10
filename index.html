@@ -9,20 +9,20 @@
         <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css' rel='stylesheet' type='text/css'>
  		<link rel="stylesheet" type="text/css" href="assets/css/src/app.css">
  	</head>
- 	<body>
+ 	<body class="page single-product">
 
             <main role="main" class="main">
 
                 <div class="body_wrapper">
 
                     <nav class="nav nav__main row">
-                        <div class="col-3">
+                        <div class="columns small-2">
                             <a href="/">
                                 <img src="./assets/img/icon/logo.png" alt="Tribe" class="site-logo"/>
                             </a>
                         </div>
 
-                        <div class="col-3">
+                        <div class="columns small-2">
                             <section class="basket">
                                 <div class="basket__item basket__quantity">
                                     <div class="splash__wrapper basket__quantity--icon">
@@ -42,11 +42,11 @@
                         </div>
                     </nav>
 
-                    <section class="entry__wrapper row">
-                        <div class="col-3">
-                            <img src="./assets/img/content/ps4.jpg" alt="PS4" />
+                    <article class="entry__wrapper row">
+                        <div class="columns medium-2">
+                            <img src="./assets/img/content/ps4.jpg" alt="PS4" class="product__image"/>
                         </div>
-                        <div class="col-3">
+                        <div class="columns medium-2">
                             <section class="copy__wrapper item">
                                 <h3>Lorum</h3>
                                 <h2>Lorum Ipsum</h2>
@@ -57,12 +57,36 @@
                                             <span class="discount">£20.99</span>
                                             £12.99
                                         </h2>
-                                        <p class="light">RRP:£27.99 (Lorem ipsum 20%)</p>
+                                        <p class="light">RRP:£27.99(Lorem ipsum 20%)</p>
                                     </div>
                                 </section>
                             </section>
                         </div>
-                    </section>
+
+                        <section class="footer footer__product row clearfix text-center">
+                            <div class="column medium-4">
+                                <img src="./assets/img/icon/heart-black.png" alt="" />
+                                <span>Lorum ipsum</span>
+                            </div>
+                            <div class="column medium-4">
+                                <img src="./assets/img/icon/bell.png" alt="" />
+                                <span>Lorum ipsum</span>
+                            </div>
+                            <div class="column medium-4">
+                                <p>Lorum Ipsum</p>
+                                <h4>£120.00</h4>
+                            </div>
+                            <div class="column medium-4">
+                                <ul class="inline-list">
+                                    <li><img src="./assets/img/icon/visa.png" alt="" /></li>
+                                    <li><img src="./assets/img/icon/mastercard.png" alt="" /></li>
+                                    <li><img src="./assets/img/icon/paypal.png" alt="" /></li>
+                                    <li><img src="./assets/img/icon/amex.png" alt="" /></li>
+                                </ul>
+                            </div>
+                        </section>
+
+                    </article>
 
                     <footer class="footer footer__main">
 

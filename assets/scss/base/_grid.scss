@@ -1,57 +1,37 @@
 .row {
+    clear: both;
     @extend .clearfix;
 }
 
-/*-- our cleafix hack -- */
-.row:before,
-.row:after {
-    content:"";
-    display: table ;
-    clear:both;
-}
 
-[class*='col-'] {
+
+.columns,
+.column {
     float: left;
-    min-height: 1px;
-    width: 16.66%;
+    display: inline-block;
+    width: 100%;
 
-    &:last-child {
+    &.last {
         float: right;
     }
 }
 
-.col-1{ width: 16.66%; }
-.col-2{ width: 33.33%; }
-.col-3{ width: 50%;    }
-.col-4{ width: 66.66%; }
-.col-5{ width: 83.33%; }
-.col-6{ width: 100%;   }
 
+@for $i from 1 through $max-columns {
 
-/*-- some extra column content styling --*/
+    .small-#{$i} {
+        width: 100% / $i;
+    }
 
-// @media all and (max-width:800px){
-//     .col-1{ width: 33.33%;    }
-//     .col-2{ width: 50%;        }
-//     .col-3{ width: 83.33%;    }
-//     .col-4{ width: 100%;    }
-//     .col-5{ width: 100%;    }
-//     .col-6{ width: 100%;      }
-//
-//     .row .col-2:last-of-type{
-//         width: 100%;
-//     }
-//
-//     .row .col-5 ~ .col-1{
-//         width: 100%;
-//     }
-// }
+    @media #{$medium-up} {
+        .medium-#{$i} {
+            width: 100% / $i !important;
+        }
+    }
 
-@media all and (max-width:800px){
-    .col-1{ width: 50%;        }
-    .col-2{ width: 100%;    }
-    .col-3{ width: 100%;    }
-    .col-4{ width: 100%;    }
-    .col-5{ width: 100%;    }
-    .col-6{ width: 100%;      }
+    @media #{$large-up} {
+        .large-#{$i} {
+            width: 100% / $i !important;
+        }
+    }
 }
