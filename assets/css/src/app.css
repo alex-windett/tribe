@@ -29,6 +29,12 @@
   clear: both;
 }
 
+/* line 30, ../../scss/base/_helpers.scss */
+.discount {
+  color: #e51e1a;
+  text-decoration: line-through;
+}
+
 /* line 1, ../../scss/base/_grid.scss */
 .row {
   clear: both;
@@ -173,12 +179,13 @@ h3 {
 
 /* line 36, ../../scss/base/_page.scss */
 a {
+  color: inherit;
   font-family: inherit;
   font-size: inherit;
   text-decoration: underline;
 }
 
-/* line 42, ../../scss/base/_page.scss */
+/* line 43, ../../scss/base/_page.scss */
 .copy__wrapper {
   background: white;
   padding: 35px 40px 35px 60px;
@@ -204,6 +211,26 @@ a {
 }
 /* line 20, ../../scss/modules/_splash.scss */
 .splash__roundal--primary {
+  background: #00aeef;
+}
+
+/* line 3, ../../scss/modules/_borders.scss */
+.border__active {
+  border-bottom: #00aeef 2px solid;
+}
+
+/* line 1, ../../scss/modules/_buttons.scss */
+.button {
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0 50px;
+}
+/* line 10, ../../scss/modules/_buttons.scss */
+.button__primary {
   background: #00aeef;
 }
 
@@ -236,4 +263,29 @@ a {
 .basket__quantity--cost {
   float: right;
   margin-top: 15%;
+}
+
+/* line 4, ../../scss/parts/_footer.scss */
+.footer__main {
+  background: black;
+  color: #bbbbbb;
+}
+/* line 8, ../../scss/parts/_footer.scss */
+.footer__main--item {
+  padding: 20px 0;
+}
+/* line 11, ../../scss/parts/_footer.scss */
+.footer__main--item:hover {
+  border-bottom: #00aeef 2px solid;
+  color: white;
+}
+
+/* line 5, ../../scss/pages/_product.scss */
+body.single-product .product__wrapper {
+  background: white;
+}
+/* line 9, ../../scss/pages/_product.scss */
+body.single-product .product__image {
+  display: block;
+  width: 100%;
 }

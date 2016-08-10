@@ -1,0 +1,14 @@
+body.single-product {
+
+    .product {
+
+        &__wrapper {
+            background: white;
+        }
+
+        &__image {
+            display: block;
+            width: 100%;
+        }
+    }
+}

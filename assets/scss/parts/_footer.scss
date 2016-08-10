@@ -1,0 +1,17 @@
+.footer {
+
+
+    &__main {
+        background: black;
+        color: $color-secondary;
+
+        &--item {
+            padding: 20px 0;
+
+            &:hover {
+                border-bottom: $color-link 2px solid;
+                color: white;
+            }
+        }
+    }
+}
